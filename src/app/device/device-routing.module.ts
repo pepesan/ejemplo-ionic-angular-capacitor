@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { DeviceComponent } from './device/device.component';
+import { DevicePage } from './device/device.page';
+import {CameraPage} from "./camera/camera.page";
 
 const routes: Routes = [
   {
     path: '',
-    component: DeviceComponent
+    component: DevicePage
+  },
+  {
+    path: 'camera',
+    component: CameraPage
   }
 ];
 

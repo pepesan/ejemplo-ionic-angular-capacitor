@@ -4,11 +4,11 @@ import {Device, DeviceInfo} from "@capacitor/device";
 
 @Component({
   selector: 'app-device',
-  templateUrl: './device.component.html',
-  styleUrls: ['./device.component.scss'],
+  templateUrl: './device.page.html',
+  styleUrls: ['./device.page.scss'],
 })
 
-export class DeviceComponent  implements OnInit {
+export class DevicePage implements OnInit {
 
   private activatedRoute = inject(ActivatedRoute);
   cadena: string = "hola";

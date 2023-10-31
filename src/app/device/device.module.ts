@@ -3,16 +3,17 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { DevicePageRoutingModule } from './device-routing.module';
 import { IonicModule } from '@ionic/angular';
-import { DeviceComponent } from './device/device.component';
+import { DevicePage } from './device/device.page';
+import {CameraPage} from "./camera/camera.page";
 const routes: Routes = [
   {
     path: '',
-    component: DeviceComponent
+    component: DevicePage
   }
 ];
 
 @NgModule({
-  declarations: [DeviceComponent],
+  declarations: [DevicePage, CameraPage],
   imports: [
     CommonModule,
     IonicModule,

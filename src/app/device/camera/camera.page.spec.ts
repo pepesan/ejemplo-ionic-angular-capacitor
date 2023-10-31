@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { DeviceComponent } from './device.component';
+import { CameraPage } from './camera.page';
 
-describe('DeviceComponent', () => {
-  let component: DeviceComponent;
-  let fixture: ComponentFixture<DeviceComponent>;
+describe('CameraComponent', () => {
+  let component: CameraPage;
+  let fixture: ComponentFixture<CameraPage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ DeviceComponent ],
+      declarations: [ CameraPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(DeviceComponent);
+    fixture = TestBed.createComponent(CameraPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
