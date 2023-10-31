@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DevicePage } from './device/device.page';
 import {CameraPage} from "./camera/camera.page";
+import {GeolocationPage} from "./geolocation/geolocation.page";
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'camera',
     component: CameraPage
+  },
+  {
+    path: 'geolocation',
+    component: GeolocationPage
   }
 ];
 
