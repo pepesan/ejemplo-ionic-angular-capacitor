@@ -7,6 +7,7 @@ import { DevicePage } from './device/device.page';
 import {CameraPage} from "./camera/camera.page";
 import {FormsModule} from "@angular/forms";
 import {GeolocationPage} from "./geolocation/geolocation.page";
+import {NetworkPage} from "./network/network.page";
 const routes: Routes = [
   {
     path: '',
@@ -15,7 +16,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [DevicePage, CameraPage, GeolocationPage],
+  declarations: [
+    DevicePage,
+    CameraPage,
+    GeolocationPage,
+    NetworkPage
+  ],
   imports: [
     CommonModule,
     FormsModule,

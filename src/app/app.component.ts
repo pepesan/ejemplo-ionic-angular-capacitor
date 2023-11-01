@@ -9,6 +9,7 @@ export class AppComponent {
     { title: 'Device', url: '/device', icon: 'mail' },
     { title: 'Camera', url: '/device/camera', icon: 'camera' },
     { title: 'Geo', url: '/device/geolocation', icon: 'globe' },
+    { title: 'Network', url: '/device/network', icon: 'wifi' },
     { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
     { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
     { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
