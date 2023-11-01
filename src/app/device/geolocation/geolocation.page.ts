@@ -17,7 +17,7 @@ export class GeolocationPage implements OnInit {
 
   async getCurrentPosition() {
     try {
-      const position: GeolocationPosition = await Geolocation.getCurrentPosition();
+      const position = await Geolocation.getCurrentPosition();
       this.latitude = position.coords.latitude;
       this.longitude = position.coords.longitude;
     } catch (error) {
