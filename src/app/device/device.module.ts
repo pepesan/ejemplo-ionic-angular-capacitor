@@ -9,6 +9,7 @@ import {FormsModule} from "@angular/forms";
 import {GeolocationPage} from "./geolocation/geolocation.page";
 import {NetworkPage} from "./network/network.page";
 import {ScreenOrientationPage} from "./screen-orientation/screen-orientation.page";
+import {PreferencesPage} from "./preferences/preferences.page";
 const routes: Routes = [
   {
     path: '',
@@ -22,7 +23,8 @@ const routes: Routes = [
     CameraPage,
     GeolocationPage,
     NetworkPage,
-    ScreenOrientationPage
+    ScreenOrientationPage,
+    PreferencesPage
   ],
   imports: [
     CommonModule,

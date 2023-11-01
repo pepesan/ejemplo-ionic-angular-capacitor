@@ -11,6 +11,7 @@ export class AppComponent {
     { title: 'Geo', url: '/device/geolocation', icon: 'globe' },
     { title: 'Network', url: '/device/network', icon: 'wifi' },
     { title: 'Screen Orientation', url: '/device/orientation', icon: 'swap-vertical' },
+    { title: 'Preferences', url: '/device/preferences', icon: 'cog' },
     { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
     { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
     { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },

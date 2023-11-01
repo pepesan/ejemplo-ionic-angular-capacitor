@@ -6,6 +6,7 @@ import {CameraPage} from "./camera/camera.page";
 import {GeolocationPage} from "./geolocation/geolocation.page";
 import {NetworkPage} from "./network/network.page";
 import {ScreenOrientationPage} from "./screen-orientation/screen-orientation.page";
+import {PreferencesPage} from "./preferences/preferences.page";
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: 'orientation',
     component: ScreenOrientationPage
+  },
+  {
+    path: 'preferences',
+    component: PreferencesPage
   }
 ];
 
