@@ -5,6 +5,7 @@ import { DevicePage } from './device/device.page';
 import {CameraPage} from "./camera/camera.page";
 import {GeolocationPage} from "./geolocation/geolocation.page";
 import {NetworkPage} from "./network/network.page";
+import {ScreenOrientationPage} from "./screen-orientation/screen-orientation.page";
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'network',
     component: NetworkPage
+  },
+  {
+    path: 'orientation',
+    component: ScreenOrientationPage
   }
 ];
 

@@ -8,6 +8,7 @@ import {CameraPage} from "./camera/camera.page";
 import {FormsModule} from "@angular/forms";
 import {GeolocationPage} from "./geolocation/geolocation.page";
 import {NetworkPage} from "./network/network.page";
+import {ScreenOrientationPage} from "./screen-orientation/screen-orientation.page";
 const routes: Routes = [
   {
     path: '',
@@ -20,7 +21,8 @@ const routes: Routes = [
     DevicePage,
     CameraPage,
     GeolocationPage,
-    NetworkPage
+    NetworkPage,
+    ScreenOrientationPage
   ],
   imports: [
     CommonModule,

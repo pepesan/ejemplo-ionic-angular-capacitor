@@ -10,6 +10,7 @@ export class AppComponent {
     { title: 'Camera', url: '/device/camera', icon: 'camera' },
     { title: 'Geo', url: '/device/geolocation', icon: 'globe' },
     { title: 'Network', url: '/device/network', icon: 'wifi' },
+    { title: 'Screen Orientation', url: '/device/orientation', icon: 'swap-vertical' },
     { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
     { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
     { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
