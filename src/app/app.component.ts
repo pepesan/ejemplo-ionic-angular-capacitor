@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
+    { title: 'App', url: '/device/app', icon: 'apps' },
     { title: 'Device', url: '/device', icon: 'mail' },
     { title: 'Camera', url: '/device/camera', icon: 'camera' },
     { title: 'Geo', url: '/device/geolocation', icon: 'globe' },

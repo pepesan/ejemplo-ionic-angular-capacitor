@@ -10,6 +10,7 @@ import {GeolocationPage} from "./geolocation/geolocation.page";
 import {NetworkPage} from "./network/network.page";
 import {ScreenOrientationPage} from "./screen-orientation/screen-orientation.page";
 import {PreferencesPage} from "./preferences/preferences.page";
+import {AppPage} from "./app/app.page";
 const routes: Routes = [
   {
     path: '',
@@ -24,7 +25,8 @@ const routes: Routes = [
     GeolocationPage,
     NetworkPage,
     ScreenOrientationPage,
-    PreferencesPage
+    PreferencesPage,
+    AppPage
   ],
   imports: [
     CommonModule,

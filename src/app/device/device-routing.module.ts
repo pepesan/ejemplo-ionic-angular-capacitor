@@ -7,6 +7,7 @@ import {GeolocationPage} from "./geolocation/geolocation.page";
 import {NetworkPage} from "./network/network.page";
 import {ScreenOrientationPage} from "./screen-orientation/screen-orientation.page";
 import {PreferencesPage} from "./preferences/preferences.page";
+import {AppPage} from "./app/app.page";
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'preferences',
     component: PreferencesPage
+  },
+  {
+    path: 'app',
+    component: AppPage
   }
 ];
 
