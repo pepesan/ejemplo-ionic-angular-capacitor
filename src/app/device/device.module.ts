@@ -11,6 +11,7 @@ import {NetworkPage} from "./network/network.page";
 import {ScreenOrientationPage} from "./screen-orientation/screen-orientation.page";
 import {PreferencesPage} from "./preferences/preferences.page";
 import {AppPage} from "./app/app.page";
+import {StatusBarPage} from "./status-bar/status-bar.page";
 const routes: Routes = [
   {
     path: '',
@@ -26,7 +27,8 @@ const routes: Routes = [
     NetworkPage,
     ScreenOrientationPage,
     PreferencesPage,
-    AppPage
+    AppPage,
+    StatusBarPage
   ],
   imports: [
     CommonModule,

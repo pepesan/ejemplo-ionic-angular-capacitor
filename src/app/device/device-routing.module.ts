@@ -8,6 +8,7 @@ import {NetworkPage} from "./network/network.page";
 import {ScreenOrientationPage} from "./screen-orientation/screen-orientation.page";
 import {PreferencesPage} from "./preferences/preferences.page";
 import {AppPage} from "./app/app.page";
+import {StatusBarPage} from "./status-bar/status-bar.page";
 
 const routes: Routes = [
   {
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'app',
     component: AppPage
+  },
+  {
+    path: 'status-bar',
+    component: StatusBarPage
   }
 ];
 
