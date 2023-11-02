@@ -9,6 +9,7 @@ import {ScreenOrientationPage} from "./screen-orientation/screen-orientation.pag
 import {PreferencesPage} from "./preferences/preferences.page";
 import {AppPage} from "./app/app.page";
 import {StatusBarPage} from "./status-bar/status-bar.page";
+import {HttpsPage} from "./https/https.page";
 
 const routes: Routes = [
   {
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path: 'status-bar',
     component: StatusBarPage
+  },
+  {
+    path: 'https',
+    component: HttpsPage
   }
 ];
 

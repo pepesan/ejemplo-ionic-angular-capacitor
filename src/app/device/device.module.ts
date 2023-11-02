@@ -12,6 +12,7 @@ import {ScreenOrientationPage} from "./screen-orientation/screen-orientation.pag
 import {PreferencesPage} from "./preferences/preferences.page";
 import {AppPage} from "./app/app.page";
 import {StatusBarPage} from "./status-bar/status-bar.page";
+import {HttpsPage} from "./https/https.page";
 const routes: Routes = [
   {
     path: '',
@@ -28,7 +29,8 @@ const routes: Routes = [
     ScreenOrientationPage,
     PreferencesPage,
     AppPage,
-    StatusBarPage
+    StatusBarPage,
+    HttpsPage
   ],
   imports: [
     CommonModule,
