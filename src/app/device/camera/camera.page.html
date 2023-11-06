@@ -15,10 +15,18 @@
 
   <div id="container">
 
-    <div>
-      <button (click)="takePicture()">Take Picture</button>
-      <ion-img *ngIf="photo" [src]="photo"/>
-    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="full" (click)="takePicture()">Tomar Foto</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-img *ngIf="photo" [src]="photo" class="photo-preview"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
 
