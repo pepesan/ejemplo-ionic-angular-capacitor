@@ -17,7 +17,18 @@
 
     <div>
       <h2>Geolocalización</h2>
-      <p *ngIf="latitude && longitude">Latitud: {{ latitude }}, Longitud: {{ longitude }}</p>
+      <ion-list *ngIf="latitude && longitude">
+        <ion-item>
+          <ion-label>Latitud</ion-label>
+          <ion-note slot="end">{{latitude}}</ion-note>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Longitud</ion-label>
+          <ion-note slot="end">{{longitude}}</ion-note>
+        </ion-item>
+
+      </ion-list>
       <p *ngIf="!latitude || !longitude">Obteniendo ubicación...</p>
     </div>
   </div>

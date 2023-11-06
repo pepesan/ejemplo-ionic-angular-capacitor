@@ -6,8 +6,8 @@ import { Geolocation, GeolocationPosition } from '@capacitor/geolocation';
   styleUrls: ['./geolocation.page.scss'],
 })
 export class GeolocationPage implements OnInit {
-  latitude: number | undefined;
-  longitude: number | undefined;
+  latitude: number | undefined = 0;
+  longitude: number | undefined = 0;
 
   constructor() { }
 
@@ -20,8 +20,12 @@ export class GeolocationPage implements OnInit {
       const position = await Geolocation.getCurrentPosition();
       this.latitude = position.coords.latitude;
       this.longitude = position.coords.longitude;
+      console.log("APP:INFO:"
+        + position.coords.latitude
+        +","
+        + position.coords.longitude);
     } catch (error) {
-      console.log('Error al obtener la posición:', error);
+      console.log("APP:INFO:"+'Error al obtener la posición:', error);
     }
   }
 
