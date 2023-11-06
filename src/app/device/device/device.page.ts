@@ -1,6 +1,6 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {Device, DeviceInfo} from "@capacitor/device";
+import {BatteryInfo, Device, DeviceInfo} from "@capacitor/device";
 
 @Component({
   selector: 'app-device',
@@ -20,26 +20,21 @@ export class DevicePage implements OnInit {
     model: "",
     osVersion: "",
     webViewVersion: ""
-
   };
 
-  logDeviceInfo = async () => {
-    const info = Device.getInfo();
-
-    console.log(info);
-  };
-
-  logBatteryInfo = async () => {
-    const info = await Device.getBatteryInfo();
-
-    console.log(info);
-  };
+  batteryInfo: BatteryInfo = {
+    batteryLevel: 0,
+    isCharging: false
+  }
 
   constructor() {
   }
 
   async ngOnInit() {
     this.info = await Device.getInfo();
+    console.info("APP:INFO:"+JSON.stringify(this.info));
+    this.batteryInfo = await Device.getBatteryInfo();
+    console.info("APP:INFO:"+JSON.stringify(this.batteryInfo));
   }
 
 }

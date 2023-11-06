@@ -14,7 +14,87 @@
   </ion-header>
 
   <div id="container">
-    <h1>{{info |json}}</h1>
+    <ion-list>
+      <ion-item>
+        <ion-label>Memoria Usada</ion-label>
+        <ion-note slot="end">{{info.memUsed}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Disco Libre</ion-label>
+        <ion-note slot="end">{{info.diskFree}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Disco Total</ion-label>
+        <ion-note slot="end">{{info.diskTotal}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Disco Real Libre</ion-label>
+        <ion-note slot="end">{{info.realDiskFree}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Disco Real Total</ion-label>
+        <ion-note slot="end">{{info.realDiskTotal}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Modelo</ion-label>
+        <ion-note slot="end">{{info.model}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Sistema Operativo</ion-label>
+        <ion-note slot="end">{{info.operatingSystem}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Versión del Sistema Operativo</ion-label>
+        <ion-note slot="end">{{info.osVersion}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Versión del SDK de Android</ion-label>
+        <ion-note slot="end">{{info.androidSDKVersion}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Plataforma</ion-label>
+        <ion-note slot="end">{{info.platform}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Fabricante</ion-label>
+        <ion-note slot="end">{{info.manufacturer}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Es Virtual</ion-label>
+        <ion-note slot="end">{{info.isVirtual}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-note slot="end">{{info.name}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Versión de WebView</ion-label>
+        <ion-note slot="end">{{info.webViewVersion}}</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>Nivel de Batería</ion-label>
+        <ion-note slot="end">{{batteryInfo.batteryLevel}}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Está Cargando</ion-label>
+        <ion-note slot="end">{{batteryInfo.isCharging}}</ion-note>
+      </ion-item>
+
+    </ion-list>
   </div>
 </ion-content>
 
