@@ -15,19 +15,31 @@
 
   <div id="container">
 
-    <div>
-      <p>
-        Connected: {{status.connected}}, Type: {{status.connectionType}}
-      </p>
-      <ion-item *ngIf="status.connected">
-        <ion-icon name="checkmark-circle" slot="start"></ion-icon>
-        <ion-label>Estás conectado a internet.</ion-label>
-      </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <p>
+            Connected: {{status.connected}}, Type: {{status.connectionType}}
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="status.connected">
+        <ion-col>
+          <ion-item>
+            <ion-icon name="checkmark-circle" slot="start"></ion-icon>
+            <ion-label>Estás conectado a internet.</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
 
-      <ion-item *ngIf="!status.connected">
-        <ion-icon name="close-circle" slot="start"></ion-icon>
-        <ion-label>No estás conectado a internet en este momento.</ion-label>
-      </ion-item>
-    </div>
+      <ion-row *ngIf="!status.connected">
+        <ion-col>
+          <ion-item>
+            <ion-icon name="close-circle" slot="start"></ion-icon>
+            <ion-label>No estás conectado a internet en este momento.</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
